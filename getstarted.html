@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        #start {
+            display: flex;
+            width: 80%;
+            margin: auto;
+
+        }
+
+        #sup {
+            border: 0px solid red;
+            width: 40%;
+            padding: 40px
+        }
+
+        form>input {
+            width: 95%;
+            padding: 8px;
+            border: 2px solid pink;
+        }
+
+        #do {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #do>div>input {
+            padding: 8px;
+            border: 2px solid pink;
+        }
+
+        button {
+            margin-top: 25px;
+            width: 100px;
+            background-color: #04c66f;
+            color: white;
+            border: 0px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer
+        }
+
+        button:hover {
+            background-color: #1ba753;
+        }
+
+        #slow {
+            border: 1px solid rgb(167, 165, 165);
+            width: 40%;
+            padding: 30px;
+            margin-left: 20px;
+            border-radius: 10px;
+
+        }
+
+        #slow>h1 {
+            color: #2d2d2d;
+            font-size: 28px;
+            font-family: sans-serif;
+            line-height: 34px;
+            font-weight: 700px;
+        }
+
+        #slow>div>img {
+            width: 100px;
+            margin-left: 200px;
+            margin-top: 20px;
+        }
+
+        ul>li {
+            color: #304455;
+            font-size: 16px;
+            font-family: sans-serif;
+            line-height: 24px;
+            font-weight: 400px;
+        }
+
+        h1 {
+            color: #304455;
+            font-size: 42px;
+            font-family: sans-serif;
+            line-height: 50px;
+            font-weight: 700px;
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Start your <i>free</i> 7-day Lately trial today!</h1>
+    <div id="start">
+        <div id="sup">
+            <form>
+                <div id="do">
+                    <div>
+                        <p>First Name</p>
+                        <input id="fn" type="text">
+                    </div>
+                    <div>
+                        <p>Last Name</p>
+                        <input id="ln" type="text">
+                    </div>
+                </div>
+                <p>Email Address</p>
+                <input id="email" type="text">
+                <p>Password</p>
+                <input id="password" type="text">
+            </form>
+            <button onclick="myFun()">SUBMIT</button>
+            <p style="font-family: sans-serif;margin-top: 20px;">Already have an account?<a href="login.html">Login</a></p>
+        </div>
+        <div id="slow">
+            <h1> <i>Psssst! Lately works with any longform text, audio & video! </i> </h1>
+            <ul>
+                <li>From <b>text</b>, we'll generate dozens of social posts.</li>
+                <li>From <b>audio</b>, we'll generate a transcript and dozens of social posts.</li>
+                <li>From <b>video</b>, we'll generate a transcript, and dozens of posts with matching video clips.</li>
+            </ul>
+            <div>
+                <img src="https://app.lately.ai/img/loading.a17ca56e.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    let x = document.querySelector("form")
+    
+    function myFun() {
+        let Arr=JSON.parse(localStorage.getItem("lists")) || [];
+      let Obj={
+        firstName:document.querySelector("#fn").value,
+        lastName:document.querySelector("#ln").value,
+        email:document.querySelector("#email").value,
+        password:document.querySelector("#password").value
+      }
+      Arr.push(Obj);
+      localStorage.setItem("lists",JSON.stringify(Arr));
+      document.querySelector("#fn").value="";
+      document.querySelector("#ln").value="";
+      document.querySelector("#email").value=""
+      document.querySelector("#password").value="";
+    }
+   
+</script>
