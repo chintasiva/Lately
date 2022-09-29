@@ -9,7 +9,6 @@
     
 }
 #navbar>div{
-    
     display: flex;
     justify-content: space-between;
 }
@@ -20,7 +19,7 @@
     display: flex;
     color:#30564c;
     margin-left:70px;
-    justify-content: space-around;
+    justify-content: space-between;
     cursor:pointer;
     align-items: center;
 }
@@ -35,8 +34,15 @@
 #navbar>div>img{
     padding:10px;
     cursor:pointer;
-}
-button{
+    }
+   /* a{
+    color:#00c66b
+   }*/
+ a:hover{
+  color:white;
+ }
+
+.btn1{
    border:2px solid #00c66b;
    border-radius: 5px;
    color:#00c66b;
@@ -55,8 +61,13 @@ button{
     color:#686f76;
     font-weight:bolder;
     font-size: 15px;
-    
-}
+    }
+    a{
+      color:#686f76
+    }
+    /* a:hover{
+     color:#00c66b
+    } */
 #navbar>div:nth-child(3)>button+p:hover{
   color:#00c66b;
 }
@@ -82,8 +93,7 @@ color:#00c66b;
 
 #header>div:nth-child(1){
     border:0px solid red;
-   
-    width:80%;
+   width:80%;
     margin: auto;
 }
 #subhead{
@@ -325,6 +335,7 @@ color:#00c66b;
     color: white;
     border:2px solid #00c66b;
   }
+ 
   #marcopy>div:nth-child(2)>button:hover{
      background-color: white;
      color:#00c66b;
