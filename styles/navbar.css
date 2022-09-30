@@ -38,9 +38,9 @@
    /* a{
     color:#00c66b
    }*/
- a:hover{
+ /* a:hover{
   color:white;
- }
+ } */
 
 .btn1{
    border:2px solid #00c66b;
@@ -52,23 +52,20 @@
    background-color: white;
    height: 45px;
    margin:auto;
-   
+   width:120px
 }
-#navbar>div:nth-child(3)>button+p{
+#navbar>div:nth-child(3)>a>p{
     text-align: center;
     margin: auto;
     font-family: "Noto sans",sans-serif;
     color:#686f76;
     font-weight:bolder;
     font-size: 15px;
+    margin-top:15px;
     }
-    a{
-      color:#686f76
-    }
-    /* a:hover{
-     color:#00c66b
-    } */
-#navbar>div:nth-child(3)>button+p:hover{
+   
+    
+#navbar>div:nth-child(3)>a>p:hover{
   color:#00c66b;
 }
 button:hover{
@@ -83,6 +80,13 @@ button+p:hover{
 div>h4:hover{
 color:#00c66b;
 }
+div>a>h4:hover{
+  color:#00c66b;
+  }
+  a{
+    color:#30564c;
+    text-decoration: none;
+    }
 #header{
     margin-top: 10px;
     border:0px solid red;
@@ -122,15 +126,15 @@ color:#00c66b;
     font-size: 44px;
     font-family: sans-serif;
   }
-  #subhead>div:nth-child(1)>button{
+  #subhead>div:nth-child(1)>a>button{
    background-color: #174c43;
    color:white;
-   padding-left: 20px;
-   padding-right: 20px;
+  
+   width:120
   }
-  #subhead>div:nth-child(1)>button:hover{
+  #subhead>div:nth-child(1)>a>button:hover{
     background-color: #00c66b;
- 
+ color:white
    }
    #imgsec{
     display: flex;
@@ -328,7 +332,7 @@ color:#00c66b;
     font-family: sans-serif;
     line-height:26px ;
   }
-  #marcopy>div:nth-child(2)>button{
+  #marcopy>div:nth-child(2)>a>button{
     padding:10px;
     width:170px;
     background-color:#00c66b ;
@@ -336,7 +340,7 @@ color:#00c66b;
     border:2px solid #00c66b;
   }
  
-  #marcopy>div:nth-child(2)>button:hover{
+  #marcopy>div:nth-child(2)>a>button:hover{
      background-color: white;
      color:#00c66b;
   }
@@ -421,7 +425,11 @@ color:#00c66b;
   line-height:44px ;
   text-align: center;
   }
-  #lowbo>div:nth-child(2)>button{
+  #lowbo>div:nth-child(2)>a>button{
+    margin-left: 280px;
+    width:150px
+  }
+  #lowbo>div:nth-child(2)>a>button:hover{
     margin-left: 280px;
     width:150px
   }
@@ -430,3 +438,67 @@ color:#00c66b;
     margin-top: -150px;
     margin-left: 100px;
   }
+  #ftop{
+    display: flex;
+    width:80%;
+    justify-content: space-around;
+    margin:auto;
+    margin-top: 20px;
+  }
+  .tom{
+    color: #7d7d7d;
+    font-family: sans-serif;
+    font-size:14px ;
+    line-height:22px ;
+    font-weight: 700
+  }
+  .ty{
+    color: #7d7d7d;
+    font-family: sans-serif;
+    font-size:14px ;
+    line-height:22px ;
+    font-weight: 400
+  }
+  .ty:hover{
+    color: #00c66b;
+  cursor: pointer;
+  }
+  footer>div>i{
+    color:#5f5f5f;
+    font-family: sans-serif;
+    font-size:14px ;
+    line-height:20px ;
+    font-weight: 400
+  }
+ #malafoot>div:nth-child(2)>a>img{
+width:25px;
+
+ } 
+ #malafoot>div:nth-child(2){
+margin-left:-50px
+  
+   }
+ #malafoot{
+  display: flex;
+  
+  justify-content: space-around;
+ }
+ #malafoot>div:nth-child(1)>a>img{
+  width:120px;
+  cursor:pointer;
+
+ }
+ #mata{
+  display: flex;
+  border:0px solid red;
+ 
+  background-color: #133d36;
+  justify-content: space-around;
+ }
+ #mata>h6{
+  color:rgba(255, 255, 255, 0.5);
+    font-family: sans-serif;
+    font-size:13px ;
+    line-height:20px ;
+    font-weight: 400
+ }
