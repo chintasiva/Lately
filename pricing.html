@@ -4,87 +4,243 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
-        #navbar{
-    border:0px solid red;
-    display: flex;
-    width:80%;
-    height:50px;
-    margin:auto;
-    background-color: white;
-    
-}
-#navbar>div{
-    display: flex;
-    justify-content: space-between;
-}
- #navbar>div:nth-child(2){
-    border:0px solid red;
-    width:70%;
-    font-family: "Noto sans",sans-serif;
-    display: flex;
-    color:#30564c;
-    margin-left:70px;
-    justify-content: space-between;
-    cursor:pointer;
-    align-items: center;
-}
-#navbar>div:nth-child(3){
-    border:0px solid red;
-    width:40%;
-   
-    margin-left:400px;
-    justify-content: space-between;
-}
+        #navbar {
+            border: 0px solid red;
+            display: flex;
+            width: 80%;
+            height: 50px;
+            margin: auto;
+            background-color: white;
 
-#navbar>div>a>img{
-    padding:10px;
-    cursor:pointer;
-    width:110px
-    }
-  
+        }
 
-.btn1{
-   border:2px solid #00c66b;
-   border-radius: 5px;
-   color:#00c66b;
-   font-weight:bolder;
-   padding:8px;
-   margin-right:10px;
-   background-color: white;
-   height: 45px;
-   margin:auto;
-   width:120px
-}
-.btn1:hover{
-background-color: #00c66b;
-color:wite;
-}
-#navbar>div:nth-child(3)>a>p{
-    text-align: center;
-    margin: auto;
-    font-family: "Noto sans",sans-serif;
-    color:#686f76;
-    font-weight:bolder;
-    font-size: 15px;
-    margin-top:15px
-    }
-   
-#navbar>div:nth-child(3)>a>p:hover{
-  color:#00c66b;
-}
-button:hover{
-    background-color:#00c66b ;
-    color:white;
-    cursor:pointer;
-}
-button+p:hover{
-    color:#00c66b ;
-    cursor:pointer;
-}
-div>h4:hover{
-color:#00c66b;
-}
+        #navbar.sticky {
+            padding: 40px 100px;
+        }
+
+        #navbar>div {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #navbar>div:nth-child(2) {
+            border: 0px solid red;
+            width: 70%;
+            font-family: "Noto sans", sans-serif;
+            display: flex;
+            color: #30564c;
+            margin-left: 70px;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        #navbar>div:nth-child(3) {
+            border: 0px solid red;
+            width: 40%;
+
+            margin-left: 400px;
+            justify-content: space-between;
+        }
+
+        #navbar>div>img {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+        .btn1 {
+            border: 2px solid #00c66b;
+            border-radius: 5px;
+            color: #00c66b;
+            font-weight: bolder;
+            padding: 8px;
+            margin-right: 10px;
+            background-color: white;
+            height: 45px;
+            margin: auto;
+            width: 120px
+        }
+
+        #navbar>div:nth-child(3)>a>p {
+            text-align: center;
+            margin: auto;
+            font-family: "Noto sans", sans-serif;
+            color: #686f76;
+            font-weight: bolder;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+
+        #navbar>div:nth-child(3)>a>p:hover {
+            color: #00c66b;
+        }
+
+        button:hover {
+            background-color: #00c66b;
+            color: white;
+            cursor: pointer;
+        }
+
+        button+p:hover {
+            color: #00c66b;
+            cursor: pointer;
+        }
+
+        div>h4:hover {
+            color: #00c66b;
+        }
+
+        div>a>h4:hover {
+            color: #00c66b;
+        }
+
+        a {
+            color: #30564c;
+            text-decoration: none;
+        }
+
+        #dropdown1 {
+            position: relative;
+            display: inline-block;
+        }
+
+        #dropcont1 {
+            display: none;
+            position: absolute;
+            min-width: 250px;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        #dropcont1 a {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            padding: 10px 20px;
+
+        }
+
+        #dropcont1 a:hover {
+            color: #00c66b
+        }
+
+        #dropdown1:hover #dropcont1 {
+            display: block;
+        }
+
+        #dropdown1:hover #dropbtn1 {
+            color: #00c66b;
+        }
+
+        #dropbtn1:hover {
+            color: #00c66b;
+        }
+      #dropdown2 {
+            position: relative;
+            display: inline-block;
+        }
+
+        #dropcont2 {
+            display: none;
+            position: absolute;
+            min-width: 250px;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        #dropcont2 a {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            padding: 10px 20px;
+
+        }
+
+        #dropcont2 a:hover {
+            color: #00c66b
+        }
+
+        #dropdown2:hover #dropcont2 {
+            display: block;
+        }
+
+        #dropdown2:hover #dropbtn2 {
+            color: #00c66b;
+        }
+
+        #dropbtn2:hover {
+            color: #00c66b;
+        }
+
+      #dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        #dropcont {
+            display: none;
+            position: absolute;
+            min-width: 900px;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 5px;
+            background-color: white;
+        }
+
+        #dropcont a {
+            font-size: 14px;
+            line-height: 20px;
+            display: block;
+            padding: 10px 20px;
+
+        }
+
+        #dropcont a:hover {
+            color: #00c66b
+        }
+
+        #dropdown:hover #dropcont {
+            display: block;
+        }
+
+        #dropdown:hover #dropbtn {
+            color: #00c66b;
+        }
+
+        #dropbtn:hover {
+            color: #00c66b;
+        }
+        #parent{
+            display: flex;
+            padding:20px;
+           
+        }
+        #parent>div{
+            width:100%;
+            margin-left: 20px;
+        }
+        .q{
+            font-size:15px ;
+           
+            font-family: sans-serif;
+            line-height:20px ;
+            font-weight: 600;
+        }
+        .q:hover{
+            color: #00c66b;
+        }
+       .hub:hover{
+        color: #00c66b;
+       } 
+
 #ttop{
+    margin-top:10px;
 background-color: #113831;
 }
     #ttop>div{
@@ -150,6 +306,9 @@ font-weight: bold;
 background-color: white;
 color:#00c66b;
 border:2px solid #00c66b;
+    }
+    #pricards>div:nth-child(1)>button{
+        margin-top: 38px;
     }
     .ntg>div>a{
         display: flex;
@@ -436,30 +595,100 @@ margin-left:-50px
     line-height:20px ;
     font-weight: 400
  }
+ #navbar>div>a>img{
+    padding-top:10px;
+    width:115px
+ }
     </style>
 </head>
 <body>
     <div id="navbar">
         <div>
-          <a href="navbar.html"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg" alt=""></a>  
+           <a href="navbar.html"><img src="https://global-uploads.webflow.com/5fd3c52ce5bc147a1f007ca4/5fd8f444e5106349b4570e0b_lately-nav-logo.svg"
+            alt=""></a> 
         </div>
         <div>
             <a href="/headingsection.html"></a>
-            <h4>Product <i class="fa-solid fa-angle-down"></i></h4>
-            <h4>Resources <i class="fa-solid fa-angle-down"></i></h4>
-            <h4>Company <i class="fa-solid fa-angle-down"></i></h4>
-            <h4>Pricing</h4>
+            <div id="dropdown">
+                <h4 id="dropbtn">Product <i class="fa-solid fa-angle-down"></i></h4>
+                <div id="dropcont">
+                    <div id="parent">
+                        <div>
+                         <h2 class="q">PARTNERS & INTEGRATIONS</h2>
+                         <p class="w">Find social media platform integrations and content extensions to enhance your AI content creation experience.</p>
+                        <h3 class="hub">HubSpot Social</h3>    
+                        <h3 class="hub">Hootsuite</h3> 
+                        <h3 class="hub">UpContent</h3>                     
+                        </div>
+                        <div>
+                            <h2 class="q">AI CONTENT WRITER</h2>
+                            <p class="w">Automatically writes and pre-tests content for your social media programs</p>
+                            <h2 class="q">SOCIAL ANALYTICS</h2>
+                            <p class="w">Informs your content strategy and make your content more engaging with content analytics</p>
+                        </div>
+                        <div>
+                            <h2 class="q">SOCIAL MEDIA MARKETING</h2>
+                            <p class="w">Everything you need to scale your social media marketing program</p>
+                        <h2 class="q">SOCIAL SELLING</h2>
+                        <p class="w">Extend your social content across executives, sales, employees, franchises, and more</p>
+                        </div>
+                        <div>
+                            <h2 class="q">VIDEO AUTOGENERATOR</h2>
+                            <p class="w">Turn your company videos into bite-sized social media video clips and social media posts</p>
+                            <h2 class="q">PARENT ACCOUNTS</h2>
+                            <p class="w">Easily manage parent-child social media accounts</p>
+                        </div>
+                     </div>
+                </div>
+               
+            </div>
+            <div id="dropdown1">
+                <h4 id="dropbtn1">Resources <i class="fa-solid fa-angle-down"></i></h4>
+                <div id="dropcont1">
+                    <a href="https://www.lately.ai/resources/customer-stories">Customor Stories</a>
+                    <a href="https://www.lately.ai/resources/lately-office-hours-signup">Lately Office hours signin</a>
+                    <a href="https://www.lately.ai/resources/lately-live-videos">Lately LIVE replays</a>
+                    <a href="https://www.lately.ai/resources/how-to-position-anything">How to Postion ANYTHING</a>
+                    <a href="masaischool.com">Ebooks</a>
+                    <a href="masaischool.com">Blog</a>
+                    <a href="masaischool.com">Help Center</a>
+                </div>
+            </div>
+            <div id="dropdown2">
+                <h4 id="dropbtn2">Company <i class="fa-solid fa-angle-down"></i></h4>
+                <div id="dropcont2">
+                    <a href="https://www.lately.ai/company/about">About</a>
+                    <a href="masaischool.com">Team Lately</a>
+                    <a href="masaischool.com">Press & News</a>
+                    <a href="masaischool.com">Lately Professional Services</a>
+                    <a href="masaischool.com">Contact Us</a>
+                </div>
+            </div>
+
+
+            <a href="pricing.html">
+                <h4>Pricing</h4>
+            </a>
         </div>
         <div>
-             <a target="_blank" href="getstarted.html" style="text-decoration:none"><button class="btn1" >GET STARTED</button></a>
-            <a href="login.html" style="text-decoration:none;color:#00c66b"><p >LOG IN</p></a>
+            <a target="_blank" href="getstarted.html" style="text-decoration:none"><button class="btn1">GET
+                    STARTED</button></a>
+            <a href="login.html" style="text-decoration:none;color:#00c66b">
+                <p>LOG IN</p>
+            </a>
         </div>
 
     </div>
+
+
+
+
+
+
     <div id="ttop">
       <div>
         <h1>Lately Pricing & Plans</h1>
-        <h3>Repurpose any longform text, audio or video into dozens of social posts – including matching audiograms or video clips.</h3>
+        <h3>Repurpose any longform text, audio or video into dozens of social posts - including matching audiograms or video clips.</h3>
         <p>(Save up to 30% on any annual plan with AI that won't blow out your wallet!)</p>
     </div>
     </div>
@@ -473,11 +702,14 @@ margin-left:-50px
                 </div>
               
             </div>
-            <h1>$14/month</h1>
-            <i>billed annually</i>
-            <p>For individuals. Text only.</p>
-            <p><i>7-day free trial</i></p>
-            <button>TRY FOR FREE NOW</button>
+            <!-- <div id="bomb"> -->
+                <h1>$14/month</h1>
+                <i>billed annually</i>
+                <p>For individuals. Text only.</p>
+                <p><i>7-day free trial</i></p>
+                <button>TRY FOR FREE NOW</button>
+            <!-- </div> -->
+            
         
         <div>
             <h4>Startly includes:</h4>
@@ -690,7 +922,7 @@ margin-left:-50px
         <div id="ftop">
             <div>
                 <h3 class="tom">COMPANY</h3>
-                <p class="ty">About</p>
+              <a href="https://www.lately.ai/company/about"><p class="ty">About</p></a>  
                 <p class="ty">Leadership</p>
                 <p class="ty">Professional Services</p>
                 <p class="ty">Press & News</p>
